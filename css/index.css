@@ -11,103 +11,33 @@ body {
     background-color: #121212;
 }
 
+
 /* Hero Section Styling */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
-                url('background-image.jpg') center/cover no-repeat;
-    text-align: center;
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path-to-your-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
-.hero-content {
-    max-width: 700px;
+.content {
+    position: relative;
+    z-index: 1;
     padding: 20px;
+    color: white; /* Adjust based on your design */
 }
-
-.hero h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    color: #ccc;
-}
-
-/* Button Styles */
-.cta-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-.btn {
-    padding: 12px 30px;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.btn-primary {
-    background-color: #e63946;
-    color: #fff;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #ff4d67;
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #e63946;
-}
-
-.btn-secondary:hover {
-    background-color: #e63946;
-    color: #fff;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-}
-/* Global reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    color: #fff;
-    background-color: #121212;
-}
-
-/* Hero Section Styling */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('/collab\ photoshop2.png') center/cover no-repeat;
+                url('collab/photoshop2.png') center/cover no-repeat;
     text-align: center;
 }
 
