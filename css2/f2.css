@@ -1,33 +1,55 @@
-/* General page styles for dark theme */
-body {
-    background-color: #1a1a1a; /* Dark background */
-    color: #f0f0f0; /* Light text color */
-    font-family: Arial, sans-serif;
+/* CSS for f2.css */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Styling the image container */
-.image-container {
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full height */
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text */
 }
 
-/* Center the image */
-.centered-image {
-    max-width: 90%;
+.image-container {
+    width: 100%;
+    max-width: 800px; /* Limits image size */
     height: auto;
-    border: 2px solid #f0f0f0; /* Optional: white border around the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the animated border stays within bounds */
 }
 
-/* Styling the "Project 1" heading */
-h1 {
-    text-align: center;
-    color: #f0f0f0;
-    margin: 20px 0;
-    font-size: 2rem;
+.centered-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures the image fits without stretching */
+    transition: transform 0.3s ease; /* Smooth animation on hover */
+    border-radius: 10px;
 }
 
-/* Optional: Style links or other elements if needed */
+.centered-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* RGB Animated Border */
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .image-container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .centered-image {
+        width: 100%;
+    }
+}
